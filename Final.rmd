@@ -25,16 +25,122 @@ mutate(across(where(is.character), as.factor))
 A new  preventative vaccine (covid921) is under test in clinical trials. Given the nature of this vaccine it is suspected that the drug may exhibit different effectiveness across the variety of subpopulations tracked. Consider population subgroups by gender( guys and gals), drug use, and sexual orientation. Write a complete report that separately considers this drug for each subgroup and your recommendations as to whether people in the subgroup should take the vaccine. Structure your report in four sections each devoted to one of the four subgroups, use null and alternative hypothesis statements and correct statistical verbage when referencing p-values in conclusions.
 
 
+## Males
+
 $H_0$ The Covid-921 vaccine does not exhibit a significant difference in effectiveness between male populations.
 
 
 $H_A$ The Covid-921 vaccine does exhibit a significant difference in effectiveness between male populations.
 
 
+```{r}
+library(dplyr)
+Males = filter(FinalData, FinalData$sex=='M')
+```
+
+
+# Methods
+
+Male is categorical variable, Covid-921 vaccine administration is an explanatory variable, Covid-19 prevention effectiveness is the response variable. Therefore, we use cat~cat helper file.
+
+
+
+# Results
+
+## Descriptive Results 
+
+### Graphical Descriptive Results
+
+```{r}
+barchartGC(~infected + treatment,data=Males)
+barchartGC(~infected + treatment,data=Males, type="percent")
+```
+
+
+### Numerical Descriptive Results
+
+
+## Inferential Results
+
+
+
+# Discussion and Conclusion
+
+
+## Females
+
 $H_0$ The Covid-921 vaccine does not exhibit a significant difference in effectiveness between female populations.
 
 
 $H_A$ The Covid-921 vaccine does exhibit a significant difference in effectiveness between female populations.
+
+
+
+```{r}
+library(dplyr)
+Females = filter(FinalData, FinalData$sex=='F')
+```
+
+
+# Methods
+
+Female is categorical variable, Covid-921 vaccine administration is an explanatory variable, Covid-19 prevention effectiveness is the response variable. Therefore, we use cat~cat helper file.
+
+
+
+# Results
+
+## Descriptive Results 
+
+
+### Graphical Descriptive Results
+
+
+### Numerical Descriptive Results
+
+
+## Inferential Results
+
+
+# Discussion and Conclusion
+
+
+
+## LGBTQ
+
+$H_0$ The COVID-921 vaccine exhibits consistent effectiveness across different sexual orientation subgroups.
+
+
+
+$H_A$ The COVID-921 vaccine demonstrates varying effectiveness across different sexual orientation subgroups.
+
+
+Sexual orietation LGTQ+ is a categorical variable, Covid-921 vaccine administration is an explanatory variable, Covid-19 prevention effectiveness is a response variable. Therefore, we use cat~cat helperfile.
+
+
+# Methods
+
+
+
+# Results
+
+## Descriptive Results 
+
+
+### Graphical Descriptive Results
+
+
+### Numerical Descriptive Results
+
+
+## Inferential Results
+
+
+
+# Discussion and Conclusion
+
+
+## Druggies
 
 
 $H_0$ The COVID-921 vaccine does not demonstrate varying effectiveness among individuals with different levels of drug use.
@@ -44,33 +150,28 @@ $H_0$ The COVID-921 vaccine does not demonstrate varying effectiveness among ind
 $H_A$  The COVID-921 vaccine demonstrates consistent effectiveness among individuals with different levels of drug use.
 
 
-$H_0$ The COVID-921 vaccine exhibits consistent effectiveness across different sexual orientation subgroups.
+# Methods
+
+
+Drug use is a categorical variable, Covid-921 vaccine administration is an explanatory variable, Covid-19 prevention effectiveness is a response variable. Therefore, we use cat~cat helperfile.
 
 
 
-$H_A$ The COVID-921 vaccine demonstrates varying effectiveness across different sexual orientation subgroups.
+# Results
+
+## Descriptive Results 
 
 
-
-## Males
-
+### Graphical Descriptive Results
 
 
-
-## Females
-
+### Numerical Descriptive Results
 
 
-
-## LGBTQ
-
+## Inferential Results
 
 
-
-
-## Druggies
-
-
+# Discussion and Conclusion
 
 
 
