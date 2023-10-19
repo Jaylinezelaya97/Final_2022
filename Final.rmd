@@ -95,6 +95,11 @@ Female is categorical variable, Covid-921 vaccine administration is an explanato
 
 ### Graphical Descriptive Results
 
+```{r}
+barchartGC(~infected + treatment,data=Females)
+barchartGC(~infected + treatment,data=Females, type="percent")
+```
+
 
 ### Numerical Descriptive Results
 
@@ -115,6 +120,14 @@ $H_0$ The COVID-921 vaccine exhibits consistent effectiveness across different s
 $H_A$ The COVID-921 vaccine demonstrates varying effectiveness across different sexual orientation subgroups.
 
 
+
+```{r}
+library(dplyr)
+LGBTQ = filter(FinalData, FinalData$LGBTQ=='gay')
+head(LGBTQ)
+```
+
+
 Sexual orietation LGTQ+ is a categorical variable, Covid-921 vaccine administration is an explanatory variable, Covid-19 prevention effectiveness is a response variable. Therefore, we use cat~cat helperfile.
 
 
@@ -128,6 +141,11 @@ Sexual orietation LGTQ+ is a categorical variable, Covid-921 vaccine administrat
 
 
 ### Graphical Descriptive Results
+
+```{r}
+barchartGC(~infected + treatment,data=LGBTQ)
+barchartGC(~infected + treatment,data=LGBTQ, type="percent")
+```
 
 
 ### Numerical Descriptive Results
@@ -150,6 +168,12 @@ $H_0$ The COVID-921 vaccine does not demonstrate varying effectiveness among ind
 $H_A$  The COVID-921 vaccine demonstrates consistent effectiveness among individuals with different levels of drug use.
 
 
+```{r}
+library(dplyr)
+DrugUser = filter(FinalData, FinalData$DrugUser=='yes')
+head(DrugUser)
+```
+
 # Methods
 
 
@@ -163,6 +187,11 @@ Drug use is a categorical variable, Covid-921 vaccine administration is an expla
 
 
 ### Graphical Descriptive Results
+
+```{r}
+barchartGC(~infected + treatment,data=DrugUser)
+barchartGC(~infected + treatment,data=DrugUser, type="percent")
+```
 
 
 ### Numerical Descriptive Results
