@@ -59,8 +59,35 @@ barchartGC(~infected + treatment,data=Males, type="percent")
 
 ### Numerical Descriptive Results
 
+```{r}
+table2 <- xtabs(~infected + treatment, data=Males)
+rowPerc(table2)
+colPerc(table2)
+```
+
+
 
 ## Inferential Results
+
+```{r}
+chisq.test(table2)
+chisqtestGC(table2)
+```
+
+
+
+
+
+
+
+
+
+```{r}
+Males$infected=factor(Males$infected,c('none','Covid19'))
+fisher.test(Males$treatment,Males$infected)
+```
+
+
 
 
 
@@ -104,7 +131,29 @@ barchartGC(~infected + treatment,data=Females, type="percent")
 ### Numerical Descriptive Results
 
 
+```{r}
+table2 <- xtabs(~infected + treatment, data=Females)
+rowPerc(table2)
+colPerc(table2)
+```
+
 ## Inferential Results
+
+```{r}
+chisq.test(table2)
+chisqtestGC(table2)
+```
+
+
+
+
+
+```{r}
+Females$infected=factor(Females$infected,c('none','Covid19'))
+fisher.test(Females$treatment,Females$infected)
+```
+
+
 
 
 # Discussion and Conclusion
@@ -150,8 +199,29 @@ barchartGC(~infected + treatment,data=LGBTQ, type="percent")
 
 ### Numerical Descriptive Results
 
+```{r}
+table2 <- xtabs(~infected + treatment, data=LGBTQ)
+rowPerc(table2)
+colPerc(table2)
+```
+
+
 
 ## Inferential Results
+```{r}
+chisq.test(table2)
+chisqtestGC(table2)
+```
+
+
+
+
+
+
+```{r}
+LGBTQ$infected=factor(LGBTQ$infected,c('none','Covid19'))
+fisher.test(LGBTQ$treatment,LGBTQ$infected)
+```
 
 
 
@@ -196,8 +266,27 @@ barchartGC(~infected + treatment,data=DrugUser, type="percent")
 
 ### Numerical Descriptive Results
 
+```{r}
+table2 <- xtabs(~infected + treatment, data=DrugUser)
+rowPerc(table2)
+colPerc(table2)
+```
+
 
 ## Inferential Results
+
+```{r}
+chisq.test(table2)
+chisqtestGC(table2)
+```
+
+
+
+
+```{r}
+DrugUser$infected=factor(DrugUser$infected,c('none','Covid19'))
+fisher.test(DrugUser$treatment,DrugUser$infected)
+```
 
 
 # Discussion and Conclusion
