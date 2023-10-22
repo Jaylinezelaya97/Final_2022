@@ -85,7 +85,7 @@ chisqtestGC(table2)
 
 
 
-
+P value is .000000002842 therefore we reject the null hypothesis.
 
 
 
@@ -96,7 +96,7 @@ Males$infected=factor(Males$infected,c('none','Covid19'))
 fisher.test(Males$treatment,Males$infected)
 ```
 
-
+P-value is equal to 1 therefore we fail to reject the alternative hypothesis. Odds ratio is 
 
 
 
@@ -135,6 +135,9 @@ Female is categorical variable, Covid-921 vaccine administration is an explanato
 barchartGC(~infected + treatment,data=Females)
 barchartGC(~infected + treatment,data=Females, type="percent")
 ```
+
+
+About 38% of women who received the Covid921 vaccine were infected with covid, meanwhile a high 60% of women who received a placebo were infected with Covid-19. 50% of women who received the Covid921 vaccine and 50% of women who received the placebo did not get infected with the Covid-19 virus
 
 
 ### Numerical Descriptive Results
