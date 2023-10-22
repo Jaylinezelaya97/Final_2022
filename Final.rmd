@@ -293,6 +293,10 @@ barchartGC(~infected + treatment,data=DrugUser, type="percent")
 ```
 
 
+Among Drug User's who became infected with the Covid-19 virus less than 20% were given a placebo and over 80% were given the Covid921 vaccine. Among Drug User's who were not infected by Covid-19 a little more than half were given a placebo vaccine and slightly less than half were given the Covid-921 vaccine.
+
+
+
 ### Numerical Descriptive Results
 
 ```{r}
