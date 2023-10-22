@@ -306,6 +306,14 @@ colPerc(table2)
 ```
 
 
+
+Among Drug Users who were infected with Covid-19 less than 12% were given a placebo vaccine and approximately 88% were given the Covid921 vaccine. Between Drug Users who were not infected with Covid-19 about 51% were given a placebo vaccine and approximately 88% were given the Covid921 vaccine.
+
+
+In a different trial run between Drug Users who were infected with the Covid-19 virus 0.4% were given a placebo vaccine and about 3% were given the Covid921 vaccine. Among Drug Users who were not infected with Covid-19 99.6% of drug users were given a placebo and about 97% were given the Covid921 vaccine.
+
+
+
 ## Inferential Results
 
 ```{r}
