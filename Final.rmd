@@ -229,6 +229,11 @@ rowPerc(table2)
 colPerc(table2)
 ```
 
+Of those from the LGBTQ Community that were infected with the Covid-19 virus approximately 15% received a placebo vaccine and approximately 85% received a Covid921 vaccine. Among those members from the LGBTQ community that were not infected by the Covid-19 virus half were given a placebo vaccine and half were given the Covid921 vaccine.
+
+
+In a different trial run, among those from the LGBTQ community who were infected by the Covid-19 virus less than 1% were given a placebo vaccine and approximately 3.5% were given the Covid921 vaccine. Among those from the LGBTQ community who were not infected by the Covid-19 virus about 99% received a placebo vaccine and about 96.5% received the Covid921 vaccine.
+
 
 
 ## Inferential Results
