@@ -164,7 +164,7 @@ chisq.test(table2)
 chisqtestGC(table2)
 ```
 
-
+P value is .000000002842 therefore we reject the null hypothesis.
 
 
 
@@ -173,7 +173,7 @@ Females$infected=factor(Females$infected,c('none','Covid19'))
 fisher.test(Females$treatment,Females$infected)
 ```
 
-
+P value is equal to 1
 
 
 # Discussion and Conclusion
@@ -215,6 +215,10 @@ Sexual orietation LGTQ+ is a categorical variable, Covid-921 vaccine administrat
 barchartGC(~infected + treatment,data=LGBTQ)
 barchartGC(~infected + treatment,data=LGBTQ, type="percent")
 ```
+
+
+
+Of those in the subgroup LGBTQ who were infected with the Covid-19 virus less than 20% received a placebo vaccine and over 80% received the Covid921 vaccine. Of those LGBTQ members who were not infected by Covid-19 50% received a placebo vaccine and 50% received a Covid921 vaccine.
 
 
 ### Numerical Descriptive Results
