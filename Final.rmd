@@ -99,7 +99,7 @@ fisher.test(Males$treatment,Males$infected)
 ```
 
  
-
+P value is .00000000000004631
 
 
 # Discussion and Conclusion
@@ -177,7 +177,7 @@ The chisquared test determined the P value is less than 0.05 therefore we reject
 fisher.test(Females$treatment,Females$infected)
 ```
 
-P value is equal to 
+P value is equal to  0.0002162 
 
 
 # Discussion and Conclusion
@@ -262,6 +262,7 @@ The chisquare test determined p value is less than 0.05 therefore we reject the 
 fisher.test(LGBTQ$treatment,LGBTQ$infected)
 ```
 
+P value is .00000001029
 
 
 # Discussion and Conclusion
@@ -341,6 +342,7 @@ The chisquare test determined p value is less than 0.05 therefore we reject the 
 fisher.test(DrugUser$treatment,DrugUser$infected)
 ```
 
+P value is .000000000232
 
 # Discussion and Conclusion
 
