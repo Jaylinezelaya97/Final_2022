@@ -99,7 +99,7 @@ fisher.test(Males$treatment,Males$infected)
 ```
 
  
-P value is .00000000000004631
+P value is .00000000000004631, The odds of the vaccine working for males is about 2.2:1
 
 
 # Discussion and Conclusion
@@ -177,7 +177,7 @@ The chisquared test determined the P value is less than 0.05 therefore we reject
 fisher.test(Females$treatment,Females$infected)
 ```
 
-P value is equal to  0.0002162 
+P value is equal to  0.0002162, The odds of the vaccine working for females is about 1.50:1
 
 
 # Discussion and Conclusion
@@ -262,7 +262,7 @@ The chisquare test determined p value is less than 0.05 therefore we reject the 
 fisher.test(LGBTQ$treatment,LGBTQ$infected)
 ```
 
-P value is .00000001029
+P value is .00000001029, the odds of the vaccine working for those in LGBTQ community is about 0.2:1
 
 
 # Discussion and Conclusion
@@ -342,7 +342,8 @@ The chisquare test determined p value is less than 0.05 therefore we reject the 
 fisher.test(DrugUser$treatment,DrugUser$infected)
 ```
 
-P value is .000000000232
+P value is .000000000232, the odds of the vaccine working for drug users is about 0.1:1
+
 
 # Discussion and Conclusion
 
