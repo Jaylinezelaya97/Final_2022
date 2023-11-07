@@ -354,6 +354,5 @@ The original question was does the COVID-921 vaccine demonstrate varying effecti
 
 # Overall Results
 
-
-
+The overall original question was will the Covid-921 vaccine exhibit different effectiveness across the variety of sub populations? This includes individuals such as males, females, those of a sexual orientation in the LGBTQ+ community, and drug users. In all 4 cases the P-value was less than 0.05 therefore in all 4  cases we reject the null hypothesis
 
